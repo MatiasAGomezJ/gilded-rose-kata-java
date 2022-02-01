@@ -1,0 +1,5 @@
+edu/poniperro/gildedrose/App.class
+edu/poniperro/gildedrose/domain/NormalItem.class
+edu/poniperro/gildedrose/domain/Item.class
+edu/poniperro/gildedrose/domain/Updateable.class
+edu/poniperro/gildedrose/domain/GildedRose.class

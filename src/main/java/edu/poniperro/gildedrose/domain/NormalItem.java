@@ -1,16 +1,12 @@
 package edu.poniperro.gildedrose.domain;
 
-public class NormalItem extends Item implements Updateable {
+public class NormalItem implements Updateable {
 
-    private String name;
-    private int sellIn;
-    private int quality;
+    private Item item;
 
     public NormalItem(String name, int sellIn, int quality) {
-        super(name, sellIn, quality);
+        item = new Item(name, sellIn, quality);
     }
-
-    @Override
     public void updateQuality() {
         reduceSellIn();
         changQuality();
@@ -18,23 +14,43 @@ public class NormalItem extends Item implements Updateable {
     }
 
     private void reduceSellIn() {
-        sellIn --;
+        setSellIn(getSellIn() - 1);
     }
 
     private void changQuality() {
         int qModifier = 1;
-        if (sellIn < 0) {
+        if (getSellIn() < 0) {
             qModifier *= 2;
         }
-        quality += (qModifier * (-1));
+        setQuality(getQuality() + qModifier * (-1));
     }
 
     private void checkQualityinRange() {
-        if (quality <= 0) {
-            quality = 0;
+        if (getQuality() <= 0) {
+            setQuality(0);
         }
-        if (quality >= 50) {
-            quality = 50;
+        if (getQuality() >= 50) {
+            setQuality(50);
         }
+    }
+
+    public String toString() {
+        return item.toString();
+    }
+
+    public int getSellIn() {
+        return item.sellIn;
+    }
+
+    public int getQuality() {
+        return item.quality;
+    }
+
+    public void setSellIn(int sellIn) {
+        item.sellIn = sellIn;
+    }
+
+    public void setQuality(int quality) {
+        item.quality = quality;
     }
 }

@@ -1,3 +1,4 @@
-/home/matias/IdeaProjects/gilded-rose-kata-java/src/test/java/edu/poniperro/gildedrose/domain/NormalItemTest.java
-/home/matias/IdeaProjects/gilded-rose-kata-java/src/test/java/edu/poniperro/gildedrose/domain/GildedRoseTest.java
-/home/matias/IdeaProjects/gilded-rose-kata-java/src/test/java/edu/poniperro/gildedrose/AppTest.java
+/home/matias/IdeaProjects/gildedrose/src/test/java/edu/poniperro/gildedrose/AppTest.java
+/home/matias/IdeaProjects/gildedrose/src/test/java/edu/poniperro/gildedrose/domain/GildedRoseTest.java
+/home/matias/IdeaProjects/gildedrose/src/test/java/edu/poniperro/gildedrose/domain/Tests.java
+/home/matias/IdeaProjects/gildedrose/src/test/java/edu/poniperro/gildedrose/domain/NormalItemTest.java
